@@ -1,0 +1,92 @@
+
+<html>
+<head>
+<!--   <link href="styles.css" rel="stylesheet">
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Page</title>
+<style>
+.c1{
+	width:450px;
+	height:40px;
+	text-align:left;
+	font-size:28px;
+	box-shadow:2px 2px gray;
+    	border-radius:5px;
+
+}
+.c2{
+	width:60px;
+	height:50px;
+	border-radius:20px 0px 20px 0px;
+	background-color:#44ddce;
+	color:rgb(184, 19, 19);
+	font-size:18px;
+	font-weight:bold;
+	padding:10px;
+}
+</style>
+<script>
+function f1(bb)
+{
+	t1.value += bb.innerHTML;
+}
+function f2()
+{
+    eval(t1.value);
+    t1.value = eval(t1.value);
+}
+function f3()
+{
+    t1.value = "";
+}
+</script>
+</head>
+<body>
+	<div >
+		<table align="center">
+			<tbody>
+				<tr><td colspan="7"><input type="text" id="t1" class="c1"></td></tr>
+				<tr>
+					<td><button class="c2"onClick="f1(this)">Sin</button></td>
+					<td><button class="c2" onClick="f1(this)">Log</button></td>
+					<td><button class="c2"onClick="f1(this)">1</button></td>
+					<td><button class="c2"onClick="f1(this)">2</button></td>
+					<td><button class="c2"onClick="f1(this)">3</button></td>
+					<td><button class="c2"onClick="f3(this)">CE</button></td>
+					<td><button class="c2"onClick="f3(this)">AC</button></td>
+				</tr>
+				<tr>
+					<td><button class="c2" onClick="f1(this)">Cos</button></td>
+					<td><button class="c2"onClick="f1(this)">&#x221a;</button></td>
+					<td><button class="c2"onClick="f1(this)">4</button></td>
+					<td><button class="c2"onClick="f1(this)">5</button></td>
+					<td><button class="c2"onClick="f1(this)">6</button></td>
+					<td><button class="c2"onClick="f1(this)">+</button></td>
+					<td><button class="c2"onClick="f1(this)">-</button></td>
+				</tr>
+				<tr>
+					<td><button class="c2"onClick="f1(this)">Tan</button></td>
+					<td><button class="c2"onClick="f1(this)">&#x221b;</button></td>
+					<td><button class="c2"onClick="f1(this)">7</button></td>
+					<td><button class="c2"onClick="f1(this)">8</button></td>
+					<td><button class="c2"onClick="f1(this)">9</button></td>
+					<td><button class="c2"onClick="f1(this)">*</button></td>
+					<td><button class="c2"onClick="f1(this)">/</button></td>
+				</tr>
+				<tr>
+					<td><button class="c2"onClick="f1(this)">1/x</button></td>
+					<td><button class="c2"onClick="f1(this)">x<sup>y</sup></button></td>
+					<td><button class="c2"onClick="f1(this)">+/-</button></td>
+					<td><button class="c2"onClick="f1(this)">0</button></td>
+					<td><button class="c2"onClick="f1(this)">.</button></td>
+					<td colspan="2"><button style="width:125px" class="c2"onClick="f2(this)">=</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+
